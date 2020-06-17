@@ -1,0 +1,387 @@
+body {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(2, 1, 131);
+    color: white;
+    text-align: right;
+    padding: 1px 0 0 0;
+    font-size: 10pt;
+}
+
+header p {
+    margin-right: 230px;
+}
+
+.central {
+    position: relative;
+    margin: 0 100px 0 100px;
+}
+
+#imgLogo {
+    width: 150px;
+    height: 40px;
+    margin: 0 0 -60px 120px;
+}
+
+.sectionCentral {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul ul {
+    display: none;
+    z-index: 1;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 120px;
+}
+
+nav ul {
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: grey;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul ul {
+    background: rgb(2, 1, 131);
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 20px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background: rgb(2, 1, 150);
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.fotoslide {
+    width: 894px;
+    height: 290px;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    display: block;
+    margin-left: 120px;
+}
+
+.fotoslide:nth-child(1) {}
+
+.fotoslide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.fotoslide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.fotoslide:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+        transform: scale(1.0, 1.0)
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#textoEImg {
+    margin-top: 300px;
+    margin-left: 120px;
+    justify-content: space-between;
+    display: flex;
+    color: grey;
+}
+
+#img1 {
+    width: 325px;
+    height: 212px;
+    margin-right: 135px;
+}
+
+.box {
+    color: grey;
+    margin-left: 120px;
+}
+
+.smallImages {
+    width: 196px;
+    height: 163px;
+}
+
+figure {
+    width: 196px;
+    height: 163px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: grey;
+    padding: auto;
+}
+
+footer {
+    background-color: rgb(69, 69, 69);
+    height: 175px;
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.navRodape {
+    margin: 10px;
+}
+
+.navRodape ul {
+    width: 63%;
+}
+
+@media(max-width: 800px) {
+    .central {
+        width: 100%;
+        margin: 0%
+    }
+    header {
+        width: 100%;
+    }
+    header a {
+        text-align: center;
+    }
+    #imgLogo {
+        display: none;
+    }
+    .fotoslide {
+        width: 100%;
+        margin-left: 0%;
+    }
+    #textoEImg {
+        width: 120%;
+        margin-left: 0%;
+    }
+    .box {
+        margin-left: 0%;
+    }
+    .box h1 {
+        text-align: center;
+    }
+    .smallImages {
+        margin-left: 27%;
+    }
+    .navRodape ul {
+        width: 90%;
+        margin: 3% 0 0 25%;
+        padding: 0px;
+    }
+}
+
+@media(max-width: 480px) {
+    .central {
+        width: 100%;
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        margin: 0px;
+    }
+    header p {
+        margin: 0px;
+        text-align: center;
+    }
+    nav ul {
+        width: 120%;
+        font-size: 8pt;
+        margin-left: 0px;
+    }
+    nav ul ul {
+        width: 18%;
+    }
+    nav ul ul ul {
+        width: 100%;
+    }
+    .sectionCentral {
+        width: 100%;
+    }
+    .fotoslide {
+        width: 480px;
+        height: 320px;
+        margin: 0;
+    }
+    #textoEImg {
+        display: block;
+        padding-top: 10%;
+        width: 100%;
+        margin-left: 5px;
+    }
+    #textoEImg h1 {
+        margin-left: 20%;
+    }
+    #img1 {
+        margin-left: 70px;
+    }
+    .smallImages {
+        width: 100%;
+    }
+    figure {
+        display: inline-block;
+        padding: 10px 10px 0 0;
+        margin: 0px;
+    }
+    .navRodape ul {
+        width: 50%;
+    }
+    .box {
+        margin: 0 0 0 6%;
+    }
+    .box h1 {
+        text-align: center;
+    }
+    .navRodape ul {
+        width: 120%;
+        margin: 10px 0 0 45px;
+        padding: 0px;
+        font-size: 8pt;
+    }
+    footer h2 {
+        font-size: 18pt;
+        font-weight: 50;
+    }
+}
+
+@media (max-width: 320px) {
+    .central {
+        width: 100%;
+        margin: 0px;
+    }
+    header {
+        width: 100%;
+        margin: 0px;
+    }
+    header p {
+        margin: 0px;
+        text-align: center;
+    }
+    nav ul {
+        width: 165%;
+        padding: 0px;
+        font-size: 6pt;
+    }
+    nav ul ul {
+        width: 20%;
+        padding: 0%;
+        margin-left: 5%;
+    }
+    nav ul ul li {
+        padding: 0%;
+        left: 0%;
+    }
+    nav ul ul li a:hover {
+        width: 30%;
+        margin-left: -5%;
+    }
+    nav ul ul li a {
+        margin-left: -15%;
+    }
+    .fotoslide {
+        display: none;
+    }
+    #textoEImg {
+        margin-top: 0px;
+    }
+    #textoEImg h1 {
+        font-size: 14pt;
+        margin-left: 12%;
+    }
+    #textoEImg h3 {
+        margin-left: 14%;
+    }
+    #textoEImg p {
+        font-size: 10pt;
+    }
+    #img1 {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .box {
+        margin: 0px;
+        text-align: center;
+    }
+    .navRodape ul {
+        margin-left: 10%;
+        width: 140%;
+        text-align: center;
+        padding: 0%;
+        font-size: 6pt;
+    }
+    .navRodape ul a {
+        padding-right: 100%;
+    }
+    footer {
+        height: 100px;
+    }
+    footer h2 {
+        font-size: 12pt;
+        font-weight: 50;
+        text-align: center;
+    }
+}
